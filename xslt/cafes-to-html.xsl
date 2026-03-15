@@ -41,7 +41,7 @@ article{padding:20px;border:1px solid #ddd;}
 
 <main>
 <section class="page-title">
-<h1>Nuestros Cafés (XSLT)</h1>
+<h1>Nuestros Cafés</h1>
 <p>Total: <xsl:value-of select="count(//cafe)"/> cafés | Precio total: <xsl:value-of select="sum(//cafe/precio)"/>€</p>
 </section>
 
