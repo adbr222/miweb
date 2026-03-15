@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xslt/cafes-to-html.xsl"?>
+<!DOCTYPE cafeteria SYSTEM "cafes.dtd">
+<cafeteria xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="cafes.xsd">
+    <cafes>
+
+        <cafe id="CF001" origen="India" tueste="oscuro" molido="false" destacado="true">
+            <nombre>Café Robusta India</nombre>
+            <descripcion>Blend de Arábica y Robusta de Harley Estate, taza potente y dulce.</descripcion>
+            <precio>14.50</precio>
+            <peso>250</peso>
+            <stock>35</stock>
+            <fechaAlta>2025-10-15</fechaAlta>
+            <intensidad>9</intensidad>
+            <notasSabor>chocolate negro, especias, cuerpo alto</notasSabor>
+            <etiquetas>
+                <etiqueta>espresso</etiqueta>
+                <etiqueta>leche</etiqueta>
+            </etiquetas>
+            <imagen>Img/india.webp</imagen>
+        </cafe>
+
+        <cafe id="CF002" origen="Kenya" tueste="medio" molido="false" destacado="true">
+            <nombre>Café Arábica Kenya</nombre>
+            <descripcion>Café de altura con notas cítricas y cuerpo medio.</descripcion>
+            <precio>12.90</precio>
+            <peso>250</peso>
+            <stock>40</stock>
+            <fechaAlta>2025-09-20</fechaAlta>
+            <intensidad>7</intensidad>
+            <notasSabor>cítricos, frutos rojos, aroma floral</notasSabor>
+            <etiquetas>
+                <etiqueta>filtro</etiqueta>
+                <etiqueta>pour-over</etiqueta>
+            </etiquetas>
+            <imagen>Img/kenya.avif</imagen>
+        </cafe>
+
+        <cafe id="CF003" origen="Colombia" tueste="medio" molido="false" destacado="false">
+            <nombre>Café Colombia Supremo</nombre>
+            <descripcion>Sabor suave y balanceado con notas a caramelo y nuez.</descripcion>
+            <precio>10.00</precio>
+            <peso>250</peso>
+            <stock>50</stock>
+            <fechaAlta>2025-08-10</fechaAlta>
+            <intensidad>6</intensidad>
+            <notasSabor>caramelo, nuez, chocolate con leche</notasSabor>
+            <etiquetas>
+                <etiqueta>espresso</etiqueta>
+                <etiqueta>filtro</etiqueta>
+            </etiquetas>
+            <imagen>Img/colombia.avif</imagen>
+        </cafe>
+
+        <cafe id="CF004" origen="Casa" tueste="oscuro" molido="false" destacado="true">
+            <nombre>Mezcla Especial Casa</nombre>
+            <descripcion>70% Arábica y 30% Robusta para una crema espesa y sabor intenso.</descripcion>
+            <precio>15.00</precio>
+            <peso>250</peso>
+            <stock>28</stock>
+            <fechaAlta>2025-11-05</fechaAlta>
+            <intensidad>8</intensidad>
+            <notasSabor>cacao, frutos secos, final largo</notasSabor>
+            <etiquetas>
+                <etiqueta>espresso</etiqueta>
+                <etiqueta>capuccino</etiqueta>
+            </etiquetas>
+            <imagen>Img/mezcla.jpg</imagen>
+        </cafe>
+
+        <cafe id="CF005" origen="Etiopía" tueste="claro" molido="false" destacado="false">
+            <nombre>Café Etiopía Yirgacheffe</nombre>
+            <descripcion>Café de origen único con alta acidez y notas florales.</descripcion>
+            <precio>13.20</precio>
+            <peso>250</peso>
+            <stock>32</stock>
+            <fechaAlta>2025-07-02</fechaAlta>
+            <intensidad>5</intensidad>
+            <notasSabor>jazmín, limón, té negro</notasSabor>
+            <etiquetas>
+                <etiqueta>filtro</etiqueta>
+                <etiqueta>cold-brew</etiqueta>
+            </etiquetas>
+            <imagen>Img/etiopia.jpg</imagen>
+        </cafe>
+
+        <cafe id="CF006" origen="Brasil" tueste="medio" molido="true" destacado="false">
+            <nombre>Café Brasil Cerrado</nombre>
+            <descripcion>Café equilibrado ideal para el día a día, molido para espresso.</descripcion>
+            <precio>9.80</precio>
+            <peso>250</peso>
+            <stock>60</stock>
+            <fechaAlta>2025-06-18</fechaAlta>
+            <intensidad>6</intensidad>
+            <notasSabor>chocolate, avellana, baja acidez</notasSabor>
+            <etiquetas>
+                <etiqueta>espresso</etiqueta>
+            </etiquetas>
+            <imagen>Img/brasil.png</imagen>
+        </cafe>
+
+        <cafe id="CF007" origen="Guatemala" tueste="medio" molido="false" destacado="false">
+            <nombre>Café Guatemala Antigua</nombre>
+            <descripcion>Café de altura con cuerpo medio y dulzor marcado.</descripcion>
+            <precio>11.90</precio>
+            <peso>250</peso>
+            <stock>38</stock>
+            <fechaAlta>2025-05-09</fechaAlta>
+            <intensidad>7</intensidad>
+            <notasSabor>chocolate, caramelo, ligera especia</notasSabor>
+            <etiquetas>
+                <etiqueta>filtro</etiqueta>
+                <etiqueta>espresso</etiqueta>
+            </etiquetas>
+            <imagen>Img/guatemala.jpg</imagen>
+        </cafe>
+
+        <cafe id="CF008" origen="Perú" tueste="claro" molido="false" destacado="false">
+            <nombre>Café Perú Orgánico</nombre>
+            <descripcion>Café certificado orgánico con acidez suave y final dulce.</descripcion>
+            <precio>12.40</precio>
+            <peso>250</peso>
+            <stock>42</stock>
+            <fechaAlta>2025-04-22</fechaAlta>
+            <intensidad>5</intensidad>
+            <notasSabor>panela, frutos secos, flores</notasSabor>
+            <etiquetas>
+                <etiqueta>filtro</etiqueta>
+                <etiqueta>prensa-francesa</etiqueta>
+            </etiquetas>
+            <imagen>Img/peru.png</imagen>
+        </cafe>
+
+        <cafe id="CF009" origen="Costa Rica" tueste="medio" molido="false" destacado="false">
+            <nombre>Café Costa Rica Tarrazú</nombre>
+            <descripcion>Café balanceado con buena acidez y cuerpo medio.</descripcion>
+            <precio>13.80</precio>
+            <peso>250</peso>
+            <stock>30</stock>
+            <fechaAlta>2025-03-30</fechaAlta>
+            <intensidad>6</intensidad>
+            <notasSabor>caramelo, cítricos, nueces</notasSabor>
+            <etiquetas>
+                <etiqueta>filtro</etiqueta>
+            </etiquetas>
+            <imagen>Img/costa-rica.jpg</imagen>
+        </cafe>
+
+        <cafe id="CF010" origen="México" tueste="claro" molido="false" destacado="true">
+            <nombre>Café México Chiapas</nombre>
+            <descripcion>Café dulce y aromático procedente de pequeños productores.</descripcion>
+            <precio>11.50</precio>
+            <peso>250</peso>
+            <stock>45</stock>
+            <fechaAlta>2025-02-14</fechaAlta>
+            <intensidad>5</intensidad>
+            <notasSabor>chocolate con leche, miel, frutos secos</notasSabor>
+            <etiquetas>
+                <etiqueta>filtro</etiqueta>
+                <etiqueta>espresso</etiqueta>
+            </etiquetas>
+            <imagen>Img/mexico.jpg</imagen>
+        </cafe>
+
+    </cafes>
+</cafeteria>
+
+
+
+

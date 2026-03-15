@@ -1,0 +1,33 @@
+<!ELEMENT cafeteria (cafes)>
+<!ATTLIST cafeteria
+    nombre      CDATA   #IMPLIED
+    xmlns:xsi CDATA #IMPLIED
+    xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+
+<!ELEMENT cafes (cafe+)>
+
+<!ELEMENT cafe (nombre, descripcion, precio, peso, stock, fechaAlta, intensidad, notasSabor, etiquetas, imagen)>
+<!ATTLIST cafe
+    id          ID                      #REQUIRED
+    origen      CDATA                   #REQUIRED
+    tueste      (claro|medio|oscuro)    "medio"
+    molido      (true|false)            "false"
+    destacado   (true|false)            "false">
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT peso (#PCDATA)>
+<!ELEMENT stock (#PCDATA)>
+
+<!ELEMENT fechaAlta (#PCDATA)>
+
+<!ELEMENT intensidad (#PCDATA)>
+
+<!ELEMENT notasSabor (#PCDATA)>
+
+<!ELEMENT etiquetas (etiqueta+)>
+<!ELEMENT etiqueta (#PCDATA)>
+
+<!ELEMENT imagen (#PCDATA)>

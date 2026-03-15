@@ -1,0 +1,120 @@
+/*Tabla*/
+    .schedule-table { 
+        background: (90deg, #C8AE7D 0%, #543310 100%);
+        color: white;
+        border-radius:30px;
+        border-collapse: collapse;
+        height: 320px;
+        margin: auto;
+        max-width: 400px;
+        padding:5px;
+        width: 100%;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        animation: float 5s infinite;
+    }
+
+    th { /*Letras inicio tabla*/
+        color:#ffffff;
+        background-color: #543310;
+        border: 1px solid rgba(148, 187, 233, 0.5);
+        border-bottom:4px solid #9ea7af;
+        border-right: 1px solid #343a45;
+        font-size:22px;
+        font-weight: 100;
+        padding:24px;
+        text-align:center;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+        vertical-align:middle;
+    }
+    
+    th:first-child {
+        border-top-left-radius:30px;
+    }
+    
+    th:last-child {
+        border-top-right-radius:30px;
+        border-right:none;
+    }
+    
+    tr {
+        border-top: 1px solid #C1C3D1;
+        border-bottom: 1px solid #C1C3D1;
+        color:#666B85;
+        font-size:16px;
+        font-weight:normal;
+        text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+    }
+    
+    tr:hover td { /*Efecto martes, jueves, s y d*/
+        background:#543310; 
+        color:#ffffff;
+        border-top: 1px solid rgb(199, 183, 129);
+    }
+    
+    tr:first-child {
+        border-top:none;
+    }
+    
+    tr:last-child {
+        border-bottom:none;
+    }
+    
+    tr:nth-child(odd) td { /*Fondo lunes, miercoles, viernes*/
+        background:#EBEBEB;
+    }
+    
+    tr:nth-child(odd):hover td { /*Efecto lunes, miercoles, viernes*/
+        background:#C8AE7D;
+        border-top: 1px solid rgb(224, 200, 134);
+        color: black;
+    }
+    
+    tr:last-child td:first-child {
+        border-bottom-left-radius:30px;
+    }
+    
+    tr:last-child td:last-child {
+        border-bottom-right-radius:30px;
+    }
+    
+    td { /*Columnas abajo*/
+        background:#FFFFFF;
+        padding:10px;
+        text-align:left;
+        vertical-align:middle;
+        font-weight:300;
+        font-size:18px;
+        text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+        border-right: 1px solid #C1C3D1;
+        color: #333;       
+        border: 1px solid rgba(148, 187, 233, 0.5);
+    
+    }
+    
+    td:last-child {
+        border-right: 0px;
+    }
+    
+    th.text-left {
+        text-align: left;
+    }
+    
+    th.text-center {
+        text-align: center;
+    }
+    
+    th.text-right {
+        text-align: right;
+    }
+    
+    td.text-left {
+        text-align: left;
+    }
+    
+    td.text-center {
+        text-align: center;
+    }
+    
+    td.text-right {
+        text-align: right;
+    }

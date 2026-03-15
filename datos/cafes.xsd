@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <xs:element name="cafeteria">
+        <xs:annotation>
+            <xs:documentation>Catálogo de cafés de la tienda.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cafes" type="tipoCafes"/>
+            </xs:sequence>
+            <xs:attribute name="nombre" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="tipoCafes">
+        <xs:sequence>
+            <xs:element name="cafe" type="tipoCafe" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="tipoCafe">
+        <xs:sequence>
+            <xs:element name="nombre" type="tipoNombreCafe"/>
+            <xs:element name="descripcion" type="tipoDescripcion"/>
+            <xs:element name="precio" type="tipoPrecio"/>
+            <xs:element name="peso" type="tipoPeso"/>
+            <xs:element name="stock" type="tipoStock"/>
+            <xs:element name="fechaAlta" type="xs:date"/>
+            <xs:element name="intensidad" type="tipoIntensidad"/>
+            <xs:element name="notasSabor" type="xs:string"/>
+            <xs:element name="etiquetas" type="tipoEtiquetas"/>
+            <xs:element name="imagen" type="tipoRutaImagen"/>
+        </xs:sequence>
+
+        <xs:attribute name="id" type="tipoIdCafe" use="required"/>
+        <xs:attribute name="origen" type="xs:string" use="required"/>
+        <xs:attribute name="tueste" use="optional">
+            <xs:simpleType>
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="claro"/>
+                    <xs:enumeration value="medio"/>
+                    <xs:enumeration value="oscuro"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="molido" type="xs:boolean" use="optional"/>
+        <xs:attribute name="destacado" type="xs:boolean" use="optional"/>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoIdCafe">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="CF[0-9]{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoNombreCafe">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="3"/>
+            <xs:maxLength value="60"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoDescripcion">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoPrecio">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="5.00"/>
+            <xs:maxInclusive value="50.00"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoPeso">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:minInclusive value="100"/>
+            <xs:maxInclusive value="1000"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoStock">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="500"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="tipoIntensidad">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="tipoEtiquetas">
+        <xs:sequence>
+            <xs:element name="etiqueta" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tipoRutaImagen">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Img/.*"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

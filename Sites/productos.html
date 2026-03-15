@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Nid de Café</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/producto.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- CABECERA-->
+    <header class="main-header">
+        <nav>
+            <!-- Dentro de <nav> -->
+            <a href="../index.html" class="logo">
+            <img src="../Img/logo_final.png" alt="Logo Le Nid de Café">
+            <span>Le Nid de Café</span>
+            </a>
+
+
+            <!-- Menú de Navegación-->
+            <ul class="menu">
+                <li><a href="../index.html" class="active">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./formulario.html">Contacto</a></li>
+                <!-- Botón Login -->
+                <li><a href="./login.html" class="btn-login">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Título de la Sección -->
+    <section class="page-title">
+        <h1>Nuestros Cafés</h1>
+        <p>Selección exclusiva de granos de todo el mundo</p>
+    </section>
+
+    <!-- REJILLA DE PRODUCTOS -->
+    <main class="products-grid-container">
+        
+        <!-- Producto 1: India  -->
+        <div class="product-card-full">
+            <div class="card-image">
+                <img src="../Img/india.webp" alt="Café Robusta India">
+                <span class="tag-new">Nuevo</span>
+            </div>
+            <div class="card-details">
+                <h2>Café Robusta India</h2>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i> 
+                </div>
+                <p class="description">
+                    Cultivado en Harley Estate (Karnataka), este blend combina Arábica y Robusta premium Kaapi Royale. Potente, dulce y complejo.
+                </p>
+                <div class="price-action">
+                    <span class="price">14,50 €</span>
+                    <button class="btn-buy">Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 2: Kenya -->
+        <div class="product-card-full">
+            <div class="card-image">
+                <img src="../Img/kenya.avif" alt="Café Kenya">
+            </div>
+            <div class="card-details">
+                <h2>Café Arábica Kenya</h2>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="description">
+                    Café de altura con notas cítricas y cuerpo medio. Ideal para quienes buscan acidez brillante y aroma floral.
+                </p>
+                <div class="price-action">
+                    <span class="price">12,90 €</span>
+                    <button class="btn-buy">Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 3: Colombia -->
+        <div class="product-card-full">
+            <div class="card-image">
+                <img src="../Img/colombia.avif" alt="Café Colombia">
+            </div>
+            <div class="card-details">
+                <h2>Café Colombia Supremo</h2>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="description">
+                    El clásico mundial. Sabor suave, balanceado y con notas a caramelo y nuez. Perfecto para el día a día.
+                </p>
+                <div class="price-action">
+                    <span class="price">10,00 €</span>
+                    <button class="btn-buy">Añadir</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Producto 4: Mezcla -->
+        <div class="product-card-full">
+            <div class="card-image">
+                <img src="../Img/mezcla.jpg" alt="Café Mezcla">
+            </div>
+            <div class="card-details">
+                <h2>Mezcla Especial Casa</h2>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p class="description">
+                    Nuestra fórmula secreta. 70% Arábica y 30% Robusta para conseguir una crema espesa y sabor intenso.
+                </p>
+                <div class="price-action">
+                    <span class="price">15,00 €</span>
+                    <button class="btn-buy">Añadir</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="page-title">
+    <h1>Más cafés de nuestro catálogo</h1>
+    </section>
+
+    <main class="products-grid-container">
+
+        <object data="../datos/cafes.xml" type="text/xml"></object>
+
+    </main>
+    
+</body>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+            <div class="footer-secciones">
+                <h3>Secciones</h3>
+                <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                        <li><a href="ofertas.html">Ofertas</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Telefono contacto: 986-203-475</li>
+                    <li>Correo contacto: <a href="mailto:lenidecafe@gmail.com">leniddecafe@gmail.com</a></li>
+                    <li><a href="./Sites/formulario.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-secciones">
+                <h3>Legal</h3>
+                <ul>
+                    <li>Términos y Cóndiciones</li>
+                    <li>Política de Privacidad</li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="derechos"></div>
+    <p>Le Nid de Café • © 2025 • Todos los derechos reservados</p>
+</footer>
+
+</html>

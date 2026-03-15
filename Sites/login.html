@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Nid de Café</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/producto.css">
+    <link rel="stylesheet" href="../CSS/ofertas.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- CABECERA-->
+    <header class="main-header">
+        <nav>
+            <!-- Dentro de <nav> -->
+            <a href="../index.html" class="logo">
+            <img src="../Img/logo_final.png" alt="Logo Le Nid de Café">
+            <span>Le Nid de Café</span>
+            </a>
+
+
+            <!-- Menú de Navegación-->
+            <ul class="menu">
+                <li><a href="../index.html" class="active">Inicio</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./accesorios.html">Accesorios</a></li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./formulario.html">Contacto</a></li>
+                <!-- Botón Login -->
+                <li><a href="./login.html" class="btn-login">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <!--FORMULARIO -->
+    <main class="login-container">
+        <div class="login-card">
+            <!-- Icono decorativo -->
+            <div class="login-icon">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            
+            <h2>Bienvenido de nuevo</h2>
+            <p>Introduce tus datos para entrar en tu cuenta</p>
+
+            <form action="#" method="POST">
+                <!-- Campo Email -->
+                <div class="input-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <!-- Campo Contraseña -->
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+
+                <!-- Enlaces extra -->
+                <div class="form-actions">
+                    <label>
+                        <input type="checkbox"> Recordarme
+                    </label>
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <!-- Botón Login -->
+                <button type="submit" class="btn-login-submit">Entrar</button>
+            </form>
+
+            <div class="register-link">
+                ¿No tienes cuenta? <a href="#">Regístrate aquí</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-container">
+            <div class="footer-secciones">
+                <h3>Secciones</h3>
+                <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="accesorios.html">Accesorios</a></li>
+                        <li><a href="ofertas.html">Ofertas</a></li>
+                </ul>
+            </div>
+            <div class="footer-contacto">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Telefono contacto: 986-203-475</li>
+                    <li>Correo contacto: <a href="mailto:lenidecafe@gmail.com">leniddecafe@gmail.com</a></li>
+                    <li><a href="./formulario.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-secciones">
+                <h3>Legal</h3>
+                <ul>
+                    <li>Términos y Cóndiciones</li>
+                    <li>Política de Privacidad</li>
+                </ul>
+            </div>
+        </div>
+
+    <div class="derechos"></div>
+    <p>Le Nid de Café • © 2025 • Todos los derechos reservados</p>
+</footer>
+
+</html>

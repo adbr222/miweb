@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Nid de Café</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/tabla.css">
+    <link rel="stylesheet" href="./CSS/producto.css">
+</head>
+
+<body>
+    <!-- CABECERA-->
+    <header class="main-header">
+        <nav>
+            <!-- Dentro de <nav> -->
+            <a href="index.html" class="logo">
+            <img src="./Img/logo_final.png" alt="Logo Le Nid de Café">
+            <span>Le Nid de Café</span>
+            </a>
+
+
+            <!-- Menú de Navegación-->
+            <ul class="menu">
+                <li><a href="./index.html" class="active">Inicio</a></li>
+                <li><a href="./datos/cafes.xml">Productos</a></li>
+                <li><a href="./Sites/accesorios.html">Accesorios</a></li>
+                <li><a href="./Sites/ofertas.html">Ofertas</a></li>
+                <li><a href="./Sites/formulario.html">Contacto</a></li>
+                <!-- Botón Login -->
+                <li><a href="./Sites/login.html" class="btn-login">Iniciar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Sección Hero -->
+    <section class="hero">
+        <h1>Bienvenido a Le Nid de Café</h1>
+        <h2>El refugio del café de especialidad</h2>
+        <p>Descubre nuestra selección de cafés, infusiones y accesorios para disfrutar de cada momento con aroma y sabor únicos.</p>
+    </section>
+
+    <!-- Sección Categorías -->
+    <section class="categories">
+        <div class="category">
+            <img src="https://www.comprarlotes.com/uploads/users/user4245/gallery/9021_beneficios-del-cafe-en-grano.jpg" alt="Café en grano">
+            <h3>Cafés en Grano</h3>
+        </div>
+        <div class="category">
+            <img src="https://doctoragua.es/wp-content/uploads/2020/11/AdobeStock_272955346-scaled.jpeg" alt="Infusiones">
+            <h3>Infusiones & Tés</h3>
+        </div>
+        <div class="category">
+            <img src="https://img.freepik.com/foto-gratis/naturaleza-muerta-herramientas-cafe_23-2149371282.jpg?semt=ais_hybrid&w=740&q=80" alt="Accesorios">
+            <h3>Accesorios</h3>
+        </div>
+    </section>
+
+
+        <!--PRODUCTOS-->
+        <div class="mt-5">
+            <h1 class="tabla" id="tablas">Los más populares</h1>
+            <div class="products">
+                <div class="product-card">
+                    <img src="./Img/kenya.avif" alt="Café arábica Kenya">
+                    <h3>Café arábica Kenya</h3>
+                    <p class="price">12,90 €</p>
+                    <div class="overlay">
+                        <h3>Café arábica Kenya</h3>
+                        <button class="overlay-button">Agregar al carrito</button>
+
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./Img/col.avif" alt="Café arábica Colombia">
+                    <h3>Café arábica Colombia</h3>
+                    <p class="price">10,00 €</p>
+                    <div class="overlay">
+                        <h3>Café arábica Colombia</h3>
+                        <button class="overlay-button">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="./Img/india.webp" alt="Café robusta India">
+                    <h3>Café robusta India</h3>
+                    <p class="price">14.50 €</p>
+                    <div class="overlay">
+                        <h3>Café robusta India</h3>
+                        <button class="overlay-button">Agregar al carrito</button>
+                        <button class="product-button" onclick="location.href='./Sites/productos.html'">Ver
+                            Producto</button>
+                    </div>
+                </div>
+
+                    <div class="product-card">
+                        <img src="./Img/mezcla.jpg" alt="Café mezcla robusta y arábica">
+                        <h3>Café mezcla robusta y arábica</h3>
+                        <p class="price">15,00 €</p>
+                        <div class="overlay">
+                            <h3>Café mezcla robusta y arábica</h3>
+                            <button class="overlay-button">Agregar al carrito</button>
+                        </div>
+                </div>
+            </div>
+        </div>    
+
+
+    <!-- Horario -->
+    <div class="my-5">
+        <h1 class="Horario" id="tablas">Horario apertura</h1>
+            <table class="schedule-table">
+                <thead>
+                  <tr>
+                    <th class="text-left">Día</th>
+                        <th class="text-left">Horario</th>
+                  </tr>
+                </thead>
+                <tbody class="table-hover">
+                    <tr>
+                        <td class="text-left">Lunes</td>
+                        <td class="text-left">9:00 a 20:00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Martes</td>
+                        <td class="text-left">9:00 a 14:00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Miercoles</td>
+                        <td class="text-left">9:00 a 20:00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Jueves</td>
+                        <td class="text-left">9:00 a 20:00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Viernes</td>
+                        <td class="text-left">9:00 a 20:00</td>
+                    </tr>
+                    <tr>
+                        <td class="text-left">Sábado y Domingo</td>
+                        <td class="text-left">Cerrado</td>
+                    </tr>       
+                </tbody>
+            </table>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+
+            <div class="footer-container">
+                <div class="footer-secciones">
+                    <h3>Secciones</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="./datos/cafes.xml">Productos</a></li>
+                        <li><a href="./Sites/accesorios.html">Accesorios</a></li>
+                        <li><a href="./Sites/ofertas.html">Ofertas</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contacto">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>Telefono contacto: 986-203-475</li>
+                        <li>Correo contacto: <a href="mailto:lenidecafe@gmail.com">leniddecafe@gmail.com</a></li>
+                        <li><a href="./Sites/formulario.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-secciones">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li>Términos y Cóndiciones</li>
+                        <li>Política de Privacidad</li>
+                    </ul>
+                </div>
+            </div>
+
+        <div class="derechos"></div>
+        <p>Le Nid de Café • © 2025 • Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
+
+
+
+
